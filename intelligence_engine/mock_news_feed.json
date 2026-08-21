@@ -1,0 +1,107 @@
+[
+  {
+    "id": "evt001",
+    "timestamp": "2026-08-19T06:12:00Z",
+    "source": "Reuters Energy",
+    "headline": "Iran threatens to close Strait of Hormuz after new US sanctions package targets oil exports",
+    "body": "Tehran's naval command issued a statement warning it could disrupt tanker traffic through the Strait of Hormuz in response to a fresh round of US sanctions announced this week targeting Iranian crude exports and shadow fleet vessels."
+  },
+  {
+    "id": "evt002",
+    "timestamp": "2026-08-19T14:30:00Z",
+    "source": "Lloyd's List",
+    "headline": "Insurance premiums for Gulf tanker transits spike 40% amid rising tensions",
+    "body": "War-risk insurance premiums for vessels transiting the Strait of Hormuz have jumped sharply this week as underwriters price in a higher probability of disruption following the latest US-Iran standoff."
+  },
+  {
+    "id": "evt003",
+    "timestamp": "2026-08-18T09:00:00Z",
+    "source": "Al Jazeera",
+    "headline": "Houthi forces claim new missile strike on commercial vessel in Red Sea",
+    "body": "A commercial tanker reported damage after a missile strike attributed to Houthi forces near the Bab-el-Mandeb strait, the latest in a series of attacks that have pushed several shipping majors to reroute around the Cape of Good Hope."
+  },
+  {
+    "id": "evt004",
+    "timestamp": "2026-08-17T11:45:00Z",
+    "source": "Platts",
+    "headline": "US Treasury sanctions additional entities linked to Iranian crude exports",
+    "body": "The US Treasury's OFAC added several shipping and trading entities to its sanctions list, targeting networks believed to facilitate Iranian crude sales, further tightening pressure on Tehran's oil revenue."
+  },
+  {
+    "id": "evt005",
+    "timestamp": "2026-08-20T07:20:00Z",
+    "source": "Bloomberg",
+    "headline": "Indian refiners quietly increase Russian ESPO crude purchases as Gulf risk rises",
+    "body": "Indian refiners including IOCL and Reliance have reportedly increased term discussions for Russian ESPO blend cargoes as a hedge against potential Strait of Hormuz disruption risk."
+  },
+  {
+    "id": "evt006",
+    "timestamp": "2026-08-20T16:05:00Z",
+    "source": "Reuters",
+    "headline": "Saudi Arabia calls for de-escalation, says exports continuing normally for now",
+    "body": "Saudi officials said crude exports through the Gulf remain unaffected for now, while urging all parties to avoid actions that could threaten freedom of navigation in the Strait of Hormuz."
+  },
+  {
+    "id": "evt007",
+    "timestamp": "2026-08-16T03:10:00Z",
+    "source": "gCaptain",
+    "headline": "Suez Canal Authority reports continued drop in transit volumes",
+    "body": "Transit volumes through the Suez Canal remain well below pre-crisis levels as shipping lines continue to favor the longer Cape of Good Hope route to avoid Red Sea risk."
+  },
+  {
+    "id": "evt008",
+    "timestamp": "2026-08-15T12:00:00Z",
+    "source": "TradeWinds",
+    "headline": "Cape of Good Hope traffic hits multi-year high as Red Sea diversions continue",
+    "body": "Vessel tracking data shows tanker traffic around the Cape of Good Hope has reached its highest level in years, as owners continue to avoid the Red Sea corridor amid ongoing security concerns."
+  },
+  {
+    "id": "evt009",
+    "timestamp": "2026-08-14T05:40:00Z",
+    "source": "S&P Global",
+    "headline": "Russia's ESPO blend exports to Asia remain stable despite Western sanctions pressure",
+    "body": "Loadings of Russia's ESPO crude blend from Kozmino remained steady this month, with Chinese and Indian buyers continuing to absorb volumes at a discount despite ongoing Western sanctions efforts."
+  },
+  {
+    "id": "evt010",
+    "timestamp": "2026-08-20T20:15:00Z",
+    "source": "AP",
+    "headline": "US Navy increases presence in Persian Gulf following Iranian naval drills",
+    "body": "The US Fifth Fleet has moved additional assets into the Persian Gulf after Iran conducted large-scale naval exercises near the Strait of Hormuz, raising concerns of miscalculation between the two sides."
+  },
+  {
+    "id": "evt011",
+    "timestamp": "2026-08-13T08:00:00Z",
+    "source": "Bloomberg",
+    "headline": "US Gulf Coast crude exports to India tick up as buyers diversify away from Gulf risk",
+    "body": "US Gulf Coast crude shipments bound for Indian refiners rose modestly this month, part of a broader diversification effort by Indian buyers amid heightened Middle East supply risk."
+  },
+  {
+    "id": "evt012",
+    "timestamp": "2026-08-21T02:30:00Z",
+    "source": "Reuters",
+    "headline": "Iranian gunboats briefly intercept tanker near Strait of Hormuz, no damage reported",
+    "body": "A tanker transiting the Strait of Hormuz was briefly approached and boarded for inspection by Iranian naval vessels before being released, in an incident maritime security firms say reflects growing operational risk in the corridor."
+  },
+  {
+    "id": "evt013",
+    "timestamp": "2026-08-12T10:20:00Z",
+    "source": "Splash247",
+    "headline": "Major shipping line resumes limited Red Sea transits under naval escort",
+    "body": "One of the world's largest container and tanker operators announced it would resume a limited number of Red Sea transits under coalition naval escort, citing improved but still fragile security conditions."
+  },
+  {
+    "id": "evt014",
+    "timestamp": "2026-08-11T15:00:00Z",
+    "source": "Nikkei Asia",
+    "headline": "Brazilian crude exports to India rise slightly on diversification push",
+    "body": "Petrobras confirmed a modest increase in term crude sales to Indian refiners, part of New Delhi's broader push to diversify import sources away from Gulf-dependent corridors."
+  },
+  {
+    "id": "evt015",
+    "timestamp": "2026-08-21T01:00:00Z",
+    "source": "Reuters",
+    "headline": "Iran's parliament passes bill authorizing government to close Strait of Hormuz if sanctions escalate further",
+    "body": "Iran's parliament approved legislation granting the government authority to close the Strait of Hormuz to shipping if the US imposes further sanctions, though implementation would require sign-off from the Supreme National Security Council."
+  }
+]
