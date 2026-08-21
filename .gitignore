@@ -1,0 +1,33 @@
+# ========================
+# 🛑 SECRETS & CREDENTIALS
+# ========================
+# Ignore all Firebase admin keys (update this if you name your file differently)
+*serviceAccountKey*.json
+*firebase-admin*.json
+firebase-key.json
+
+# Ignore environment variable files
+.env
+.env.local
+.env.development
+.env.production
+
+# ========================
+# 🐍 PYTHON (Backend)
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+pip-log.txt
+
+# ========================
+# ⚛️ NODE/REACT (Frontend)
+# ========================
+node_modules/
+dist/
+build/
+.npm/
+.DS_Store
