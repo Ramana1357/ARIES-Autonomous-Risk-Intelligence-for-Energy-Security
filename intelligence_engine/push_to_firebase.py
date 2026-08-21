@@ -123,15 +123,41 @@ def push_raw_events(db, events):
 def compute_corridor_scores(events):
     """
     Aggregate events per corridor into a single rolling risk score.
-    Simple approach: baseline pulled up toward the highest (severity*confidence)
-    event for that corridor. Tune this — it's intentionally simple for a prototype.
+
+    Two things drive the score, blended together:
+      1. SEVERITY — how bad is the worst/average corroborated signal
+      2. VOLUME — how many independent events are corroborating that signal
+                   (more corroboration = more confidence the risk is real,
+                    up to a saturation point — 15+ corroborating events is
+                    treated as "fully confirmed", diminishing returns after)
+
+    This means a corridor with 1 severe event and a corridor with 20 events
+    of the same severity will NOT score identically — the 20-event corridor
+    scores higher, reflecting stronger real-world corroboration.
     """
+    VOLUME_SATURATION = 15  # events at/above this count = full volume weight
+
     scores = {}
     for corridor, baseline in BASELINE_RISK.items():
         relevant = [e for e in events if e["corridor"] == corridor]
+
         if relevant:
-            max_weighted = max(e["severity"] * e["confidence"] for e in relevant)
-            risk_score = min(1.0, baseline + max_weighted * (1 - baseline))
+            weighted_signals = [e["severity"] * e["confidence"] for e in relevant]
+            max_weighted = max(weighted_signals)
+            avg_weighted = sum(weighted_signals) / len(weighted_signals)
+
+            # Blend: mostly driven by the worst corroborated signal, with
+            # the average pulling it slightly toward the overall pattern
+            # rather than one outlier event.
+            combined_signal = (0.65 * max_weighted) + (0.35 * avg_weighted)
+
+            # Volume factor: more corroborating events = more confidence,
+            # scaling from 0.6x (single event, damped) up to 1.0x (15+ events,
+            # fully weighted) — diminishing returns past saturation.
+            volume_factor = 0.6 + 0.4 * min(1.0, len(relevant) / VOLUME_SATURATION)
+
+            risk_score = baseline + combined_signal * volume_factor * (1 - baseline)
+            risk_score = min(1.0, risk_score)
             trend = "rising" if risk_score > baseline else "stable"
         else:
             risk_score = baseline

@@ -113,6 +113,23 @@ def run_pipeline():
         )
         rec_batch.set(db.collection("recommendations").document(doc_id), recs)
 
+        # Print the actual recommendation, not just a confirmation —
+        # this is the part a procurement officer (or a judge) actually
+        # wants to see.
+        print(f"\n  📋 RECOMMENDATION for {corridor_name}:")
+        print(f"     {recs['executive_summary']}\n")
+        print(f"     Top ranked alternatives:")
+        for opt in recs["options"][:5]:
+            print(
+                f"       {opt['rank_score']:.2f}  {opt['supplier_country']:<28} "
+                f"via {opt['route']:<45} "
+                f"{opt['volume_bpd_available']:>9,} bpd, "
+                f"{opt['lead_time_days']:>2.0f}d lead, "
+                f"${opt['freight_cost_usd_per_bbl']:.2f}/bbl, "
+                f"{opt['grade_compatibility']} grade"
+            )
+        print()
+
         actioned_count += 1
 
     impact_batch.commit()
@@ -120,6 +137,25 @@ def run_pipeline():
 
     print(f"\n✓ Wrote impact + recommendations for {actioned_count} corridor(s) to Firebase.")
     print("  Frontend should read /scenario_impact and /recommendations for these.")
+
+    # Final readable summary — the "so what" of the whole run, useful for demo
+    if actioned_count > 0:
+        print("\n" + "=" * 70)
+        print("SUMMARY — WHAT TO DO RIGHT NOW")
+        print("=" * 70)
+        for c in corridors:
+            corridor_name = c["corridor"]
+            if c["risk_score"] < RISK_THRESHOLD_FOR_ACTION:
+                continue
+            doc = db.collection("recommendations").document(safe_doc_id(corridor_name)).get()
+            if doc.exists:
+                data = doc.to_dict()
+                top = data["options"][0] if data["options"] else None
+                print(f"\n⚠  {corridor_name} (risk {c['risk_score']})")
+                if top:
+                    print(f"   → Reroute to {top['supplier_country']} via {top['route']}")
+                    print(f"     ({top['volume_bpd_available']:,} bpd available, {top['lead_time_days']:.0f}-day lead time)")
+        print("\n" + "=" * 70)
 
 
 if __name__ == "__main__":
