@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Jamnagar (Reliance)",
+    "location": "Gujarat",
+    "capacity_bpd": 1240000,
+    "primary_crude_source_corridor": "Strait of Hormuz"
+  },
+  {
+    "name": "Vadinar (Nayara Energy)",
+    "location": "Gujarat",
+    "capacity_bpd": 400000,
+    "primary_crude_source_corridor": "Strait of Hormuz"
+  },
+  {
+    "name": "Paradip (IOCL)",
+    "location": "Odisha",
+    "capacity_bpd": 300000,
+    "primary_crude_source_corridor": "Strait of Hormuz"
+  },
+  {
+    "name": "Mangalore (MRPL)",
+    "location": "Karnataka",
+    "capacity_bpd": 300000,
+    "primary_crude_source_corridor": "Red Sea / Bab-el-Mandeb"
+  },
+  {
+    "name": "Bina (BORL)",
+    "location": "Madhya Pradesh",
+    "capacity_bpd": 156000,
+    "primary_crude_source_corridor": "Pacific / Russia Far East (ESPO)"
+  }
+]

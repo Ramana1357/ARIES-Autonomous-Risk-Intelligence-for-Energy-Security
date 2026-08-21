@@ -1,0 +1,27 @@
+[
+  {
+    "corridor": "Strait of Hormuz",
+    "pct_of_india_crude_imports": 42,
+    "baseline_risk": 0.35
+  },
+  {
+    "corridor": "Red Sea / Bab-el-Mandeb",
+    "pct_of_india_crude_imports": 12,
+    "baseline_risk": 0.30
+  },
+  {
+    "corridor": "Cape of Good Hope",
+    "pct_of_india_crude_imports": 5,
+    "baseline_risk": 0.05
+  },
+  {
+    "corridor": "Pacific / Russia Far East (ESPO)",
+    "pct_of_india_crude_imports": 18,
+    "baseline_risk": 0.10
+  },
+  {
+    "corridor": "US Gulf - India direct",
+    "pct_of_india_crude_imports": 10,
+    "baseline_risk": 0.05
+  }
+]

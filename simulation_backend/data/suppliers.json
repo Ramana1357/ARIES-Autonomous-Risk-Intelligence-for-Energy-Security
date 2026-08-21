@@ -1,0 +1,65 @@
+[
+  {
+    "supplier_country": "Iraq",
+    "route": "Basra -> JNPT/Sikka",
+    "typical_volume_bpd": 900000,
+    "lead_time_days": 12,
+    "freight_cost_usd_per_bbl": 1.8,
+    "grade_compatibility": "high",
+    "depends_on_corridor": "Strait of Hormuz"
+  },
+  {
+    "supplier_country": "Saudi Arabia",
+    "route": "Ras Tanura -> JNPT/Vadinar",
+    "typical_volume_bpd": 700000,
+    "lead_time_days": 13,
+    "freight_cost_usd_per_bbl": 1.9,
+    "grade_compatibility": "high",
+    "depends_on_corridor": "Strait of Hormuz"
+  },
+  {
+    "supplier_country": "United States (Gulf Coast)",
+    "route": "Houston -> JNPT",
+    "typical_volume_bpd": 300000,
+    "lead_time_days": 28,
+    "freight_cost_usd_per_bbl": 3.4,
+    "grade_compatibility": "medium",
+    "depends_on_corridor": "US Gulf - India direct"
+  },
+  {
+    "supplier_country": "Nigeria",
+    "route": "Bonny -> JNPT (via Cape of Good Hope)",
+    "typical_volume_bpd": 250000,
+    "lead_time_days": 22,
+    "freight_cost_usd_per_bbl": 2.6,
+    "grade_compatibility": "medium",
+    "depends_on_corridor": "Cape of Good Hope"
+  },
+  {
+    "supplier_country": "Russia (ESPO / Urals)",
+    "route": "Kozmino/Novorossiysk -> Indian ports",
+    "typical_volume_bpd": 1600000,
+    "lead_time_days": 20,
+    "freight_cost_usd_per_bbl": 2.2,
+    "grade_compatibility": "medium",
+    "depends_on_corridor": "Pacific / Russia Far East (ESPO)"
+  },
+  {
+    "supplier_country": "Brazil",
+    "route": "Santos -> JNPT",
+    "typical_volume_bpd": 180000,
+    "lead_time_days": 26,
+    "freight_cost_usd_per_bbl": 3.1,
+    "grade_compatibility": "low",
+    "depends_on_corridor": "Cape of Good Hope"
+  },
+  {
+    "supplier_country": "UAE",
+    "route": "Fujairah -> JNPT/Sikka",
+    "typical_volume_bpd": 400000,
+    "lead_time_days": 10,
+    "freight_cost_usd_per_bbl": 1.7,
+    "grade_compatibility": "high",
+    "depends_on_corridor": "Strait of Hormuz"
+  }
+]
